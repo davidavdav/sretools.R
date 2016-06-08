@@ -18,8 +18,8 @@
 \tabular{ll}{
 Package: \tab sretools\cr
 Type: \tab Package\cr
-Version: \tab 0.2\cr
-Date: \tab 2009-10-10\cr
+Version: \tab 0.5\cr
+Date: \tab 2011-10-31\cr
 License: \tab GPL-2\cr
 LazyLoad: \tab yes\cr
 }

@@ -1,15 +1,20 @@
 \name{ape.plot}
 \alias{ape.plot}
+\alias{nbe.plot}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{ Function to make a Applied Probability of Error plot }
 \description{
-  This function plots one or more APE plots, given a list of \code{det}
-  objects.  In an APE plot one can observe the loss of information as a
+  These function plots one or more APE plots, given a list of \code{det}
+  objects, or a single NBE plot.  In an APE plot one can observe the loss of information as a
   function of effective prior in a detection experiment.  Both the
-  detection and calibration information loss are shown.  
+  detection and calibration information loss are shown. 
+
+  In an NBE plot, the error rates are normalized such that a non-informative trivial detector that outputs LR=1 for all input, has error 1.  This way of plotting zooms in on low-prior odds, allowing inspection of the calibration performance at low priors.   
 }
 \usage{
 ape.plot(data, legend = "Ape plot", bar = T, bw = F)
+
+nbe.plot(data)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -57,6 +62,8 @@ x <- subset(tno.2008, mtype=="phonecall" & ttype=="phonecall" &
 y <- subset(x, mlang=="eng" & tlang=="eng")
 ## compare the two
 ape.plot(list(det(x), det(y)), legend=c("all phn", "english only"))
+## look at the NBE plot for the English trials
+nbe.plot(det(y))
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -5,6 +5,7 @@ export(det, det.sre, det.matrix,        # create DET statistics
        plot.cond,
        legend.det,                      # make a legend for a DET plot
        ape.plot,                        # APE plot
+       nbe.plot,                        # Normalized Bayes Error rate plot
        cond.table,                      # comput condition contingency table
        setDCF                           # set DCF parameters
        )

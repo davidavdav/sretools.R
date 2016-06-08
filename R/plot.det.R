@@ -39,6 +39,8 @@ function(x, nr=1, lty=1, col=nr, optimize=T,
     }
     detach(x)
   }
+  xdata <- limit.quantile(xdata, xlim)
+  ydata <- limit.quantile(ydata, ylim)
   if (nr==1 && lty==1) {                # first time, plot everything..
     plot(xdata, ydata, type="l", xaxt='n',yaxt='n', xlab=xlab, ylab=ylab,
          xlim=xlim, ylim=ylim, lwd=2, col=col, lty=lty, ...)
