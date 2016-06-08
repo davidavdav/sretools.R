@@ -43,7 +43,7 @@ function(x, nr=1, lty=1, col=nr, optimize=T,
     plot(xdata, ydata, type="l", xaxt='n',yaxt='n', xlab=xlab, ylab=ylab,
          xlim=xlim, ylim=ylim, lwd=2, col=col, lty=lty, ...)
     ## draw the grid and axes
-    l <- c(0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 40, 60, 80, 90, 95, 98, 99, 99.5, 99.8, 99.9)
+    l <- c(0.0001, 0.001, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 40, 60, 80, 90, 95, 98, 99, 99.5, 99.8, 99.9)
     qnl=qnorm(l/100)
     for (d in 1:2) axis(d,qnl,l)
     abline(h=qnl, lty=3)

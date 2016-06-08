@@ -1,8 +1,8 @@
 Package: sretools
 Type: Package
 Title: Compute error metrics and make DET plots for NIST-like Speaker Recognition Evaluations
-Version: 0.3
-Date: 2009-10-27
+Version: 0.4
+Date: 2010-03-08
 Author: David A. van Leeuwen
 Maintainer: <david.vanleeuwen@gmail.com>
 Description: This package contains a set of routines that can compute various
@@ -22,4 +22,4 @@ Description: This package contains a set of routines that can compute various
 License: GPL-2
 Depends: fdrtool (>= 1.2.4)
 LazyLoad: yes
-Packaged: Thu Jan  7 11:16:51 2010; leeuwendav
+Packaged: Tue Jun 22 14:32:25 2010; leeuwendav
